@@ -15,5 +15,5 @@ routes.delete('/incidents/:id', IncidentController.delete);
 
 routes.get('/profile', ProfileController.index);
 
-routes.post('sessions',SessionController.create );
+routes.post('/session', SessionController.create);
 module.exports = routes 
