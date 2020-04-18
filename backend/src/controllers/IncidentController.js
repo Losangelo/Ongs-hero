@@ -18,7 +18,8 @@ module.exports = {
       'ongs.uf'
     ]);  
 
-    res.header('X-Total-Count', count['count(*)']);
+    res.header('x-total-count', count["count(*)"]);
+    console.table(count);
     return res.json(incidents);
   },
 
